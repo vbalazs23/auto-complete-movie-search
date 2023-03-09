@@ -1,7 +1,7 @@
 // The below function is called by the text input on the page on input
 const change = debounce(async function (userQuery) {
     const config = { params: { s: userQuery, type: 'movie'} };
-    const res = await axios.get('http://www.omdbapi.com/?apikey=15a8eb7b', config);
+    const res = await axios.get('https://www.omdbapi.com/?apikey=15a8eb7b', config);
     createMovies(res.data.Search);
 })
 
