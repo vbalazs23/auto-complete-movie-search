@@ -5,7 +5,7 @@ so don't try to search for shows.
 ### Why on Earth would I do this?
 I originally wanted to create an autocomplete search bar but this version seemed much more interesting as I started to research and think about the actual project more.
 <br>
-Especially as a lot of streaming sites use this kind of search method so I thought it would be cool to play with it.
+Especially as a lot of streaming sites use this kind of search method so I thought it would be a cool concept to play with.
 <br>
 I wanted to discover options on how to implement searching while the user types without overloading an API/database with requests. So I researched debouncing and throttling
 and ended up using debounce here as it was more fitting.
