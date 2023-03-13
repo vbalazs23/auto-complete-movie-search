@@ -1,6 +1,6 @@
 # auto-complete-movie-search
 ### [See it in work here](https://vbalazs23.github.io/auto-complete-movie-search/)
-It's a small project that uses the [OMDb API](https://www.omdbapi.com/) to display search results as the user types. It uses the movie database,
+It's a small project that uses the [OMDb API](https://www.omdbapi.com/) to display search results as the user types. Try and **search for a movie title**. It uses the movie database,
 so don't try to search for shows. 
 ### Why on Earth would I do this?
 I originally wanted to create an autocomplete search bar but this version seemed much more interesting as I started to research and think about the actual project more.
