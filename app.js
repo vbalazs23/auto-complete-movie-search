@@ -1,8 +1,13 @@
 // The below function is called by the text input on the page on input
 const change = debounce(async function (userQuery) {
     const config = { params: { s: userQuery, type: 'movie'} };
-    const res = await axios.get('https://www.omdbapi.com/?apikey=15a8eb7b', config);
-    createMovies(res.data.Search);
+    try {
+        const res = await axios.get('https://www.omdbapi.com/?apikey=15a8eb7b', config);
+        createMovies(res.data.Search);
+    } catch (e) {
+        console.log("Could not retrieve data from OMDb API or no results found for your query.", 
+        "Try a different search term or try again later.", e);
+    }
 })
 
 // Debouncing to limit API calls (no need to say thanks omdb guys)
